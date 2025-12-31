@@ -4,4 +4,33 @@ fn main() {
 
     x = 6;
     println!("The value of x is: {x}");
+    example2();
 }
+
+fn example2() {
+
+    println!("Example 2");
+    let x = 5;
+
+    let x = x + 1;
+
+    {
+        let x = x * 2;
+        println!("The value of x in the inner scope is: {x}");
+    }
+
+    println!("The value of x is {x}");
+}
+
+fn example3() {
+    println!("Example 3");
+
+    let spaces = "    ";
+    let spaces = spaces.len();
+}
+
+fn floatingpointex() {
+    let x = 2.0;  // fp64
+    let y: f32 = 3.0;  // fp32
+}
+
